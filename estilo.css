@@ -1,0 +1,345 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-image: url(img/background.gif);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% 100%;
+}
+
+#box{
+	width:900px;
+	margin:20px auto;
+	margin-bottom:20px;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+}
+
+#topo{
+	height:100px;
+	margin-bottom:25px;
+}
+
+#topo_nome{
+	font:48px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	text-shadow:2px 2px 2px white;
+	color:orange;
+	float:left;
+	margin:10px 5px;
+}
+
+#topo_login{
+	width:245px;
+	font:20px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	color:white;
+	float:right;
+	margin-top: 5px;
+}
+
+#senha{
+	margin-top: 10px;
+	margin-bottom:5px;
+}
+
+#entrar {
+	width:30%;
+	font:18px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	margin-top:15px;
+	border-radius:20px;
+	-moz-border-radius: 15px;
+}
+
+#cadastrar{
+	font:24px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;
+	color:white;
+	margin-left:20px; 
+}
+		
+#cadastrar:hover{
+	color:orange;
+}
+
+#menu{
+	height:30px;
+	width: 640px;
+	border-top:2px solid #FFFFFF;
+	border-left:2px solid #FFFFFF;
+	border-right:2px solid #FFFFFF;
+	-moz-border-radius: 15em;
+	-webkit-border-radius:15px;
+	margin-bottom:5px;
+}
+
+.flexslider{
+	height: 200px;
+	width: 645px;
+	display: block;
+	list-style: none;
+	margin-left: 10px;
+	border-radius: 15px;
+	-moz-border-radius: 15px;
+}
+#menu ul{
+	display:block;
+	list-style:none;
+	margin: 5px 25px;
+}
+
+#menu ul span{
+	font: 20px arial, helvetica, sans-serif;
+	font-weight:bold;
+	text-shadow: 1px 1px 1px #000;
+	color:#f60;
+	margin: 5% 5%;
+}
+
+#menu ul li{
+	display:inline;
+}
+
+#menu ul li a{
+	font: 16px arial, helvetica, sans-serif;
+	font-weight:bold;
+	text-decoration:none;
+	text-shadow: 1px 1px 1px #000;
+	color:#fff;
+	margin-right: 13px;
+	margin-left: 13px;
+}
+
+#menu ul li a:hover{
+	color:#f60;
+}
+
+#content{
+	width:900px;
+	
+	
+}
+
+#sidebar{
+	width:245px;
+	height:550px;
+	background:#999;
+	border-right:2px solid #FFFFFF;
+	float:right;
+	-moz-border-radius:15px;
+	-webkit-border-radius:15px;
+	margin-bottom:5px;
+	margin:0 1px;	
+}
+
+#sidebar h3{
+	text-align:center;
+	font: 16px arial, helvetica, sans-serif;
+	font-weight:bolder;
+	margin: 5px;
+}
+
+#sidebar ul{
+	font: 12px arial, helvetica, sans-serif;
+	font-weight:bolder;
+	margin: 5px;
+}
+
+#conteudo{
+	width:645px;
+	height:550px;
+	background:#999;
+	border-left:2px solid #FFFFFF;
+	float:left;
+	-moz-border-radius:15em;
+	-webkit-border-radius:15px;
+	margin-bottom:5px;
+	
+}
+
+#conteudo p{
+	margin:5px;
+	text-align:justify;
+	font: 12px arial, helvetica, sans-serif;
+	font-weight:bolder;
+}
+
+#contexto {
+	width: 370px;
+	height: 350px;
+	border-radius:15px;
+	-moz-border-radius: 15px;
+	text-align:justify;
+	font: 18px arial, helvetica, sans-serif;
+	font-weight:bolder;
+	margin-top: 10%;
+	margin-left: 20%;
+}
+
+#contexto input{
+	border-radius:15px;
+	-moz-border-radius: 15px;
+}
+
+#enviar{
+	width:20%;
+	font:18px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	margin:10px;
+	border-radius:20px;
+	-moz-border-radius: 20px;
+}
+
+#limpar{
+	width:20%;
+	font:18px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	margin:10px;
+	border-radius:20px;	
+	-moz-border-radius: 20px;	
+}
+
+#cadastro{
+	margin-top: 10px;
+	margin-left: 35px;
+	text-align:justify;
+	font: 18px arial, helvetica, sans-serif;
+	font-weight:bolder;
+}
+
+#cadastro input{
+	border-radius:15px;
+	-moz-border-radius: 15px;
+	margin-bottom: 7px;
+}
+
+#env{
+	width:15%;
+	font:18px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	margin-top: 15px;
+	border-radius:20px;	
+	-moz-border-radius: 20px;
+}
+
+#lim{
+	width:15%;
+	font:18px Tahoma, Geneva, sans-serif;
+	font-weight:bold;
+	border-radius:20px;
+	-moz-border-radius: 20px;	
+}
+
+#dia,#mes{
+		width:20px ; 
+}
+
+#ano {
+	width:40px;
+}
+
+#nome{
+	width: 400px;			
+}
+
+#email1{
+	width: 400px;		
+}
+
+#email2{
+	width: 400px;	
+}
+
+#senha1{
+	width: 400px;	
+}
+
+#senha2{
+	width: 400px;	
+}
+
+#cpf{
+	width: 100px;	
+}
+
+#endereco{
+	width: 400px;	
+}
+
+#cep{
+	width: 100px;
+
+}
+
+#equipeginasium{
+	height: 100%;
+	width: 100%;
+	border-radius:20px;	
+
+}
+
+#danca{
+	width: 35%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 8%;
+	margin-right: 7%;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#musculacao{
+	width: 35%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 7%;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#pilates{
+	width: 35%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 8%;
+	margin-right: 7%;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#luta{
+	width: 35%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 7%;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+		
+#hidroginastica{
+	width: 35%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 8%;
+	margin-right: 7%;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+#bale{
+	width: 35%;
+	height: 25%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 7%;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}

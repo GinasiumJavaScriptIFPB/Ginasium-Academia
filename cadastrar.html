@@ -1,0 +1,197 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ginasium Academia</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+
+	</head>
+
+	<body>
+		<script>
+			function validaLogin(){
+				var lgn = document.login;
+				if(lgn.login.value == ""){
+					alert("Digite um login!");
+					lgn.login.focus();
+					return false;
+				}
+				if(lgn.senha.value == ""){
+					alert("Digite uma senha!");
+					lgn.senha.focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<div id="box">
+
+			<div id="topo">
+				
+				<div id="topo_nome">
+					<p>Ginasium Academia</p>
+				</div><!--Fecha topo_nome-->
+				
+				<div id="topo_login">
+					<form name="login" onsubmit="return validaLogin()">
+						<label style="display:block; margin-bottom:5px;">Login: </label> 
+						<input style="border-radius:20px; width: 240px;" type="text" value="" name="login"/>
+						<label style="display:block;" id="senha">Senha: </label>
+						<input style="border-radius:20px; width: 240px;" type="password" value="" name="senha" />
+						<input type="submit" name="entrar" value="Entrar" id="entrar">
+						<a id="cadastrar" href="cadastrar.html"><font size="05">Cadastre-se</font></a>
+					</form>
+				</div><!--Fecha topo_login-->
+				
+			</div><!--Fecha topo-->
+
+			<div id="menu"  style="border-radius:20px;">
+				<ul>
+					<li><a href="inicio.html">Início </a></li><span>/</span><li>
+					<li><a href="equipe.html">Equipe </a></li><span>/</span><li>
+					<li><a href="modalidades.html">Modalidades </a></li><span>/</span><li>
+					<li><a href="contatos.html">Contatos </a></li>
+				</ul>
+			</div><!--Fecha menu-->
+			
+			<div id="content">
+				
+				<div id="sidebar"  style="border-radius:20px;">
+					<h3>Últimas Notícias</h3>
+					<ul>
+						<p style="margin:5px; text-align:justify;"> - Promoção de abertura da Ginasium Academia:</p>
+							<li style="margin: 0px 50px;">50,00 Musculação</li>
+							<li style="margin: 0px 50px;">60,00 Pilates</li>
+							<li style="margin: 0px 50px;">70,00 Dança</li>
+							<li style="margin: 0px 50px;">80,00 Luta</li>
+							<li style="margin: 0px 50px;">90,00 Hidroginástica</li>
+							<li style="margin: 0px 50px;">55,00 Balé</li>
+						<p style="margin:5px; text-align:justify;"> - Será realizado na próxima sexta-feira (01), o 2º Fatal Fighting MMA. O evento vai acontecer mais uma vez no Ginásio de Esportes O Rivaldão, e vai contar com estrutura profissional.</p>
+							<img style="width: 225px; height: 250px; margin:0px 5px; border-radius:15px;" src="img/mma.jpg">
+					</ul>
+				</div><!--sidebar-->
+				
+				<div id="conteudo"  style="border-radius:20px;">
+
+					<form id="cadastro">	
+						<label>Nome completo:</label><br>
+						<input type="text" id="nome" autofocus><br>
+						<label>E-mail:</label><br>
+						<input type="email" id="email1"><br>
+						<label>Confirmação de e-mail:</label><br>
+						<input type="email" id="email2"><br>
+						<label>Senha:</label><br>
+					    <input type="password" id="senha1"><br>
+						<label>Confirmação de senha:</label><br>
+						<input type="password" id="senha2"><br>
+						<label>Data de nascimento:</label><br>
+						<input type="text" id="dia" onkeyup="passardia()"> / <input type="text" id="mes" onkeyup="passarmes()"> / <input type="text" id="ano" onkeyup="ano4()"><br>
+						<label>CPF:</label><br>
+						<input type="text" id="cpf"><br>
+						<label>CEP:</label><br>
+						<input type="text" id="cep"><br>
+						<label>Endereço:</label><br>
+						<input type="text" id="endereco"><br>
+						<label>UF:</label><br>
+						<select style="border-radius:15px;">
+							<option>Acre</option>
+							<option>Alagoas</option>
+							<option>Amapá</option>
+							<option>Amazonas</option>
+							<option>Bahia</option>
+							<option>Ceará</option>
+							<option>Distrito Federal</option>
+							<option>Espírito Santo</option>
+							<option>Goiás</option>
+							<option>Maranhão</option>
+							<option>Mato Grosso</option>
+							<option>Mato Grosso do Sul</option>
+							<option>Minas Gerais</option>
+							<option>Pará</option>
+							<option selected>Paraíba</option>
+							<option>Paraná</option>
+							<option>Pernambucano</option>
+							<option>Piauí</option>
+							<option>Rio de Janeiro</option>
+							<option>Rio Grande do Norte</option>
+							<option>Rio Grande do Sul</option>
+							<option>Rondônia</option>
+							<option>Roraima</option>
+							<option>Santa Caratina</option>
+							<option>São Paulo</option>
+							<option>Sergipe</option>
+							<option>Tocantins</option>			
+						</select><br>
+						<input  id="env" type="submit" value="Enviar" onclick="check()">   
+						<input  id="lim" type="reset" value="Limpar">	
+					</form>	
+
+				</div><!--Fecha conteudo-->				
+				
+			</div><!--Fecha content-->	
+
+		
+		</div><!--fecha box-->
+		<script type="text/javascript">
+		$(function(){
+			$('#cpf').mask(' 999.999.999-99');
+			$('#cep').mask('    99.999-999');
+		});
+		</script>
+		<script type="text/javascript">
+			function check() {
+				if(document.getElementById('email2').value != document.getElementById('email1').value) {
+					alert("Os e-mails nao correspondem.");
+					document.getElementById('email2').value = "";
+				}
+			
+				if(!/^\d{2}\.\d{3}-\d{3}$/.test(document.getElementById('cep').value)) {
+					alert("CEP invalido.");
+					document.getElementById('cep').value = "";
+					document.getElementById('email2').value = "";
+				}
+			
+			
+				if(!/^\d{3}\.\d{3}\.\d{3}-\d{2}$/.test(document.getElementById('cpf').value)) {
+					alert("CPF invalido.");
+					document.getElementById('cpf').value = "";
+					document.getElementById('email2').value = "";
+				}
+
+				if(document.getElementById('senha1').value != document.getElementById('senha2').value) {
+					alert("As senhas nao correspondem.");
+					document.getElementById('senha2').value = "";
+				}
+
+				if(document.getElementById('email2').value == document.getElementById('email1').value && document.getElementById('senha2').value == document.getElementById('senha1').value) {
+					document.getElementById('email2').setCustomValidity('');
+					alert("Enviado com sucesso!");
+				}
+			}
+
+			function passardia() {						
+				if(document.getElementById('dia').value.length == 2)
+					document.getElementById('mes').focus();
+			}
+			function passarmes() {							
+				if(document.getElementById('mes').value.length == 2)
+					document.getElementById('ano').focus();
+			}
+			function ano4() {
+				if(document.getElementById('ano').value.length == 4) {
+					document.getElementById('cpf').focus();
+				}
+				if(document.getElementById('ano').value.length > 4) {
+					alert("Digite apenas 4 digitos no ano.");
+					document.getElementById('ano').value = "";
+				}
+			}
+		</script>
+	
+	</body>
+
+</html>

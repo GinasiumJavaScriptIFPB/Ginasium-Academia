@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ginasium Academia</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+		<style>
+		</style>
+
+	</head>
+
+	<body>
+		<script language="JavaScript">
+			function alerta() {
+				var cont = document.contatos;
+				if(document.getElementById("nome2").value == ""){
+					alert("Digite um nome!");
+					cont.nome.focus();
+					return false;
+				}
+				if(document.getElementById("email2").value == ""){
+					alert("Digite um email válido!");
+					cont.email.focus();
+					return false;
+				}
+				if (document.getElementById("comentario").value == "") {
+					alert("Digite seu comentário!");
+					cont.comentario.focus();
+					return false;
+				}
+				alert("Enviado com sucesso!");
+				return true;
+			}
+			function validaLogin(){
+				var lgn = document.login;
+				if(lgn.login.value == ""){
+					alert("Digite um login!");
+					lgn.login.focus();
+					return false;
+				}
+				if(lgn.senha.value == ""){
+					alert("Digite uma senha!");
+					lgn.senha.focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<div id="box">
+
+			<div id="topo">
+				
+				<div id="topo_nome">
+					<p>Ginasium Academia</p>
+				</div><!--Fecha topo_nome-->
+				
+				<div id="topo_login">
+					<form name="login" onsubmit="return validaLogin()">
+						<label style="display:block; margin-bottom:5px;">Login: </label> 
+						<input style="border-radius:20px; width: 240px;" type="text" value="" name="login" autofocus/>
+						<label style="display:block;" id="senha">Senha: </label>
+						<input style="border-radius:20px; width: 240px;" type="password" value="" name="senha" />
+						<input type="submit" name="entrar" value="Entrar" id="entrar">
+						<a id="cadastrar" href="cadastrar.html"><font size="05">Cadastre-se</font></a>
+					</form>
+				</div><!--Fecha topo_login-->
+				
+			</div><!--Fecha topo-->
+
+			<div id="menu" style="border-radius:20px;">
+				<ul>
+					<li><a href="inicio.html">Início </a></li><span>/</span><li>
+					<li><a href="equipe.html">Equipe </a></li><span>/</span><li>
+					<li><a href="modalidades.html">Modalidades </a></li><span>/</span><li>
+					<li><a href="contatos.html">Contatos </a></li>
+				</ul>
+			</div><!--Fecha menu-->
+			
+			<div id="content">
+				
+				<div id="sidebar"  style="border-radius:20px;">
+					<h3>Últimas Notícias</h3>
+					<ul>
+						<p style="margin:5px; text-align:justify;"> - Promoção de abertura da Ginasium Academia:</p>
+							<li style="margin: 0px 50px;">50,00 Musculação</li>
+							<li style="margin: 0px 50px;">60,00 Pilates</li>
+							<li style="margin: 0px 50px;">70,00 Dança</li>
+							<li style="margin: 0px 50px;">80,00 Luta</li>
+							<li style="margin: 0px 50px;">90,00 Hidroginástica</li>
+							<li style="margin: 0px 50px;">55,00 Balé</li>
+						<p style="margin:5px; text-align:justify;"> - Será realizado na próxima sexta-feira (01), o 2º Fatal Fighting MMA. O evento vai acontecer mais uma vez no Ginásio de Esportes O Rivaldão, e vai contar com estrutura profissional.</p>
+							<img style="width: 225px; height: 250px; margin:0px 5px; border-radius:15px;" src="img/mma.jpg">
+					</ul>
+				</div><!--sidebar-->
+				
+				<div id="conteudo"  style="border-radius:20px;">
+					<form name="contatos" onsubmit="return validaForm()">
+						<fieldset id="contexto">
+							<label style="margin: 10px;" for"name">Nome: </label>
+							<input style="width:350px; margin:5px;"type="text" name="nome" autofocus id="nome2">
+							<label style="margin: 10px;"for="email">Email: </label>
+							<input style="width:350px; margin:5px;" type="email" name="email" id="email2">
+							<label style="margin:10px;" for="comentario">Comentário: </label>
+							<textarea style="margin:10px; border-radius:7px;" name="comentario" rows="7" cols="41" id="comentario" onkeyup="contar()"></textarea>
+							<p id="numero">140</p>
+							<input id ="enviar" onclick="alerta()" type="submit" value="Enviar">
+							<input id="limpar" type="reset" value="Limpar" onclick="resetar()">
+							<p id="email">Email: ginasium.academia@hotmail.com</p>	
+						</fieldset>
+					</form>
+				</div><!--Fecha conteudo-->				
+			
+			</div><!--Fecha content-->	
+
+		
+		</div><!--fecha box-->
+		<script>
+			function contar() {
+				var tamanhoTexto = document.getElementById("comentario").value.length;
+				var tamanho = parseInt(140 - tamanhoTexto);
+				
+			
+				if(tamanho <= 10) {
+					document.getElementById("numero").style.color = "red";
+				}
+				if(tamanho > 10) {
+					document.getElementById("numero").style.color = "black";
+				}
+				if(tamanho < 0) {
+					var x = document.getElementById("comentario").value;
+					document.getElementById('comentario').value = x.substring(0,140);
+					tamanho = 0;
+				}
+				document.getElementById("numero").innerHTML = tamanho;
+			}
+
+			function resetar() {
+				document.getElementById("numero").innerHTML = 140;
+				document.getElementById("numero").style.color = "black";
+			}
+
+
+		</script>
+	</body>
+
+</html>

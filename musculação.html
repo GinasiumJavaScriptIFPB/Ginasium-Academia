@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ginasium Academia</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="flexslider.css" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery.flexslider-min.js"></script>
+
+	</head>
+
+	<body>
+		<script>
+			function validaLogin(){
+				var lgn = document.login;
+				if(lgn.login.value == ""){
+					alert("Digite um login!");
+					lgn.login.focus();
+					return false;
+				}
+				if(lgn.senha.value == ""){
+					alert("Digite uma senha!");
+					lgn.senha.focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<div id="box">
+
+			<div id="topo">
+				
+				<div id="topo_nome">
+					<p>Ginasium Academia</p>
+				</div><!--Fecha topo_nome-->
+				
+				<div id="topo_login">
+					<form name="login" onsubmit="return validaLogin()">
+						<label style="display:block; margin-bottom:5px;">Login: </label> 
+						<input style="border-radius:20px; width: 240px;" type="text" value="" name="login" autofocus/>
+						<label style="display:block;" id="senha">Senha: </label>
+						<input style="border-radius:20px; width: 240px;" type="password" value="" name="senha" />
+						<input type="submit" name="entrar" value="Entrar" id="entrar">
+						<a id="cadastrar" href="cadastrar.html"><font size="05">Cadastre-se</font></a>
+					</form>
+				</div><!--Fecha topo_login-->
+				
+			</div><!--Fecha topo-->
+
+			<div id="menu" style="border-radius:20px;">
+				<ul>
+					<li><a href="inicio.html">Início </a></li><span>/</span><li>
+					<li><a href="equipe.html">Equipe </a></li><span>/</span><li>
+					<li><a href="modalidades.html">Modalidades </a></li><span>/</span><li>
+					<li><a href="contatos.html">Contatos </a></li>
+				</ul>
+			</div><!--Fecha menu-->
+			
+			<div id="content">
+				
+				<div id="sidebar" style="border-radius:20px;">
+					<h3>Últimas Notícias</h3>
+					<ul>
+						<p style="margin:5px; text-align:justify;"> - Promoção de abertura da Ginasium Academia:</p>
+							<li style="margin: 0px 50px;">50,00 Musculação</li>
+							<li style="margin: 0px 50px;">60,00 Pilates</li>
+							<li style="margin: 0px 50px;">70,00 Dança</li>
+							<li style="margin: 0px 50px;">80,00 Luta</li>
+							<li style="margin: 0px 50px;">90,00 Hidroginástica</li>
+							<li style="margin: 0px 50px;">55,00 Balé</li>
+						<p style="margin:5px; text-align:justify;"> - Será realizado na próxima sexta-feira (01), o 2º Fatal Fighting MMA. O evento vai acontecer mais uma vez no Ginásio de Esportes O Rivaldão, e vai contar com estrutura profissional.</p>
+							<img style="width: 225px; height: 250px; margin:0px 5px; border-radius:15px;" src="img/mma.jpg">
+					</ul>
+				</div><!--sidebar-->
+				
+				<div id="conteudo" style="border-radius:20px;">
+					<h1 align="center">Musculação</h1>
+					<p>A Musculação é um meio de Treinamento ou uma modalidade na qual se integram as principais áreas de conhecimento sobre o comportamento fisiológico e  motor do corpo humano, objetivando entender e explicar as adaptações crônicas e agudas , decorrentes da aplicação de diversas estratégias e técnicas de treinamento.O treinamento de força é uma das ferramentas utilizadas na modalidade Musculação,que aborda também o treinamento aeróbico, o treinamento de flexibilidade e possibilidades de intervenções profiláticas em alguns dos principais desvios posturais. A Musculação surgiu na busca por uma boa qualidade de vida , que compreende a saúde músculo-esquelética (boa condição anatômica e funcional dos ossos,músculos e articulações)com a finalidade de melhorar aptidões físicas como força,resistência e flexibilidade que, uma vez bem desenvolvidas são essenciais para se realizar com conforto e segurança atividades diárias ,mesmo em situações de solicitações mais acentuadas.</p>
+					<p>A musculação ou treinamento com pesos é um tipo de exercício resistido, com variáveis de carga, amplitude, tempo de contração e velocidade controláveis. Desse modo pode ser aplicada da forma isométrica (contração mantida), isocinética (com velocidade angular constante) ou isotônica (alternância de contrações concêntricas e excêntricas), contínua ou intervalada, leve, moderada ou intensa, com recursos aeróbios ou anaeróbios. Esta possibilidade de controle de tantas variáveis torna a musculação uma atividade física altamente versátil que pode ser praticada por pessoas de diversas idades para diferentes objetivos.</p>
+					<p>O treinamento com pesos se difere do fisiculturismo, levantamento de peso olímpico, levantamento de peso básico (ou powerlifting), e atletismo de força (ou strongman), que são esportes ao invés de formas de exercício. O treinamento com pesos, entretanto, geralmente faz parte do regime de treinamento dos atletas dessas modalidades.</p>	 
+					<p>As costas devem ser mantidas retas durante o agachamento e levantamento terra.O treino com pesos pode ser uma das formas mais seguras de exercício, especialmente quando os movimentos são lentos, controlados e cuidadosamente definidos. Entretanto, como qualquer outra forma de exercício, a execução incorreta pode resultar em lesões.</p>	
+					<div  class = "flexslider">
+						<ul  class = "slides">
+	
+						   <li style="display:inline;"><a href="dança.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/Dança3.jpg" title="Dança"/></a></li>
+	
+						    <li style="display:inline;"><a href="balé.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/bale.jpg" title="Balé"/></a></li>
+	
+						    <li style="display:inline;"><a href="hidroginástica.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/hidroginastica.jpg" title="Hidroginástica"/></a></li>
+	
+						    <li style="display:inline;"><a href="luta.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/luta.jpg" title="Luta"/></a></li>
+	
+						    <li style="display:inline;"><a href="musculação.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/musculacao.jpg" title="Musculação"/></a></li>
+	
+						    <li style="display:inline;"><a href="pilates.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/pilates.jpg" title="Pilates"/></a></li>
+					  	</ul>
+					</div>
+					<script type="text/javascript" charset="utf-8">
+		 
+						$('.flexslider').flexslider({
+							animation: "slide"
+						});
+						
+					</script>
+				</div><!--Fecha conteudo-->				
+			
+			</div><!--Fecha content-->	
+
+		
+		</div><!--fecha box-->
+	
+	</body>
+
+</html>

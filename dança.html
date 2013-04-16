@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ginasium Academia</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="flexslider.css" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery.flexslider-min.js"></script>
+		
+
+	</head>
+
+	<body>
+		<script>
+			function validaLogin(){
+				var lgn = document.login;
+				if(lgn.login.value == ""){
+					alert("Digite um login!");
+					lgn.login.focus();
+					return false;
+				}
+				if(lgn.senha.value == ""){
+					alert("Digite uma senha!");
+					lgn.senha.focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<div id="box">
+
+			<div id="topo">
+				
+				<div id="topo_nome">
+					<p>Ginasium Academia</p>
+				</div><!--Fecha topo_nome-->
+				
+				<div id="topo_login">
+					<form name="login" onsubmit="return validaLogin()">
+						<label style="display:block; margin-bottom:5px;">Login: </label> 
+						<input style="border-radius:20px; width: 240px;" type="text" value="" name="login" autofocus/>
+						<label style="display:block;" id="senha">Senha: </label>
+						<input style="border-radius:20px; width: 240px;" type="password" value="" name="senha" />
+						<input type="submit" name="entrar" value="Entrar" id="entrar">
+						<a id="cadastrar" href="cadastrar.html"><font size="05">Cadastre-se</font></a>
+					</form>
+				</div><!--Fecha topo_login-->
+				
+			</div><!--Fecha topo-->
+
+			<div id="menu" style="border-radius:20px;">
+				<ul>
+					<li><a href="inicio.html">Início </a></li><span>/</span><li>
+					<li><a href="equipe.html">Equipe </a></li><span>/</span><li>
+					<li><a href="modalidades.html">Modalidades </a></li><span>/</span><li>
+					<li><a href="contatos.html">Contatos </a></li>
+				</ul>
+			</div><!--Fecha menu-->
+			
+			<div id="content">
+				
+				<div id="sidebar" style="border-radius:20px;">
+					<h3>Últimas Notícias</h3>
+					<ul>
+						<p style="margin:5px; text-align:justify;"> - Promoção de abertura da Ginasium Academia:</p>
+							<li style="margin: 0px 50px;">50,00 Musculação</li>
+							<li style="margin: 0px 50px;">60,00 Pilates</li>
+							<li style="margin: 0px 50px;">70,00 Dança</li>
+							<li style="margin: 0px 50px;">80,00 Luta</li>
+							<li style="margin: 0px 50px;">90,00 Hidroginástica</li>
+							<li style="margin: 0px 50px;">55,00 Balé</li>
+						<p style="margin:5px; text-align:justify;"> - Será realizado na próxima sexta-feira (01), o 2º Fatal Fighting MMA. O evento vai acontecer mais uma vez no Ginásio de Esportes O Rivaldão, e vai contar com estrutura profissional.</p>
+							<img style="width: 225px; height: 250px; margin:0px 5px; border-radius:15px;" src="img/mma.jpg">
+					</ul>
+				</div><!--sidebar-->
+				
+				<div id="conteudo" style="border-radius:20px;">
+					<h1 align="center">Dança</h1>
+					<p>Diante do espelho de parede inteira, sob a iluminação feérica da sala ampla com piso de madeira, a bailarina Heloísa Gouvêa, de São Paulo, dança de olhos fechados, como se estivesse em transe. Não precisa ver para avaliar a movimentação do grupo de 12 alunas que acompanha animadamente a coreografia da aula de walkdance, modalidade criada por ela que faz a alegria da mulherada – tanto pelo ritmo, que convida à dança com um repertório pop, quanto pelo suadouro (ela estima um gasto de 500 calorias numa aula de uma hora e meia). O walkdance junta os passos básicos de vários ritmos e danças, do balé clássico ao maracatu, passando por jazz e samba. As aulas começam sempre com um alongamento. Em seguida, vem uma sequência de movimentos. “Repetimos exaustivamente até o corpo memorizar”, explica ela, que sabe de cor mais de 700 coreografias e, aos 55 anos, com corpaço de menina, dá 52 aulas por mês. Para principiantes, pode parecer complexo. “O estímulo é espiritual, não físico. Se existir o desejo e a intensidade, faço qualquer uma dançar”, garante Helô – cujo lema, aliás, é: “Faço até um poste dançar”.</p>
+					<p>Deu vontade? As academias oferecem um sem-número de novas possibilidades para quem quer se divertir enquanto queima gordura e esculpe o corpo, como a walkdance e a videodance, outra modalidade que está bombando na Sauer Danças, no Rio de Janeiro. Sucesso no exterior, recém-chegada ao Brasil, a videodance copia as coreografias dos shows de divas pop, como Madonna, Rihanna e Lady Gaga. Quem trouxe a técnica foi o bailarino italiano Raffaele Casuccio, 33 anos. Segundo ele, é possível queimar até 600 calorias em uma hora de prática. “As mulheres não desanimam, pois são músicas que elas curtem e movimentos que veem na televisão”, diz. Coreógrafo de programas da TV italiana, Raffaele dançou em turnês de famosos, como Ricky Martin e Luciano Pavarotti. Há três anos, visitou o Rio de Janeiro e se apaixonou pela cidade. Mudou-se definitivamente em novembro de 2011. Nas aulas, ele primeiro ensina os passos lentamente. “Então, entra o ritmo e, por mais difícil que seja no começo, vejo que as pessoas estão se divertindo”, afirma Raffaele. Muita gente quer emagrecer, e a dança dá conta disso, mas há um efeito colateral bastante desejável: “Dançar também ajuda no desenvolvimento psicológico. Pode funcionar como uma terapia, um momento para prestar atenção em si mesma, nas próprias emoções e conquistar foco e concentração”, acredita Helô Gouvêa. Ela sabe do que fala. Em 1996, perdeu o marido num acidente aéreo. Sua primeira reação foi isolar-se em Ilhabela, no litoral paulista. “Lá, dançava o tempo todo. Foi o que me salvou da tristeza. Queria proporcionar essa sensação mesmo a quem não é bailarina”, conta. Durante uma hora e meia, ela consegue.</p>
+					<div  class = "flexslider">
+						<ul  class = "slides">
+		
+						    <li style="display:inline;"><a href="dança.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/Dança3.jpg" title="Dança"/></a>
+	
+						    <li style="display:inline;"><a href="balé.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/bale.jpg" title="Balé"/></a></li>
+	
+						    <li style="display:inline;"><a href="hidroginástica.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/hidroginastica.jpg" title="Hidroginástica"/></a></li>
+	
+						    <li style="display:inline;"><a href="luta.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/luta.jpg" title="Luta"/></a></li>
+	
+						    <li style="display:inline;"><a href="musculação.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/musculacao.jpg" title="Musculação"/></a></li>
+	
+						    <li style="display:inline;"><a href="pilates.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/pilates.jpg" title="Pilates"/></a></li>
+					  	</ul>
+					</div>
+					<script type="text/javascript" charset="utf-8">
+		 
+						$('.flexslider').flexslider({
+							animation: "slide"
+						});
+						
+					</script>
+				</div><!--Fecha conteudo-->				
+			
+			</div><!--Fecha content-->	
+
+		
+		</div><!--fecha box-->
+	
+		
+	</body>
+
+</html>

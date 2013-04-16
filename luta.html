@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ginasium Academia</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" href="flexslider.css" type="text/css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="jquery.flexslider-min.js"></script>
+
+	</head>
+
+	<body>
+		<script>
+			function validaLogin(){
+				var lgn = document.login;
+				if(lgn.login.value == ""){
+					alert("Digite um login!");
+					lgn.login.focus();
+					return false;
+				}
+				if(lgn.senha.value == ""){
+					alert("Digite uma senha!");
+					lgn.senha.focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<div id="box">
+
+			<div id="topo">
+				
+				<div id="topo_nome">
+					<p>Ginasium Academia</p>
+				</div><!--Fecha topo_nome-->
+				
+				<div id="topo_login">
+					<form name="login" onsubmit="return validaLogin()">
+						<label style="display:block; margin-bottom:5px;">Login: </label> 
+						<input style="border-radius:20px; width: 240px;" type="text" value="" name="login" autofocus/>
+						<label style="display:block;" id="senha">Senha: </label>
+						<input style="border-radius:20px; width: 240px;" type="password" value="" name="senha" />
+						<input type="submit" name="entrar" value="Entrar" id="entrar">
+						<a id="cadastrar" href="cadastrar.html"><font size="05">Cadastre-se</font></a>
+					</form>
+				</div><!--Fecha topo_login-->
+				
+			</div><!--Fecha topo-->
+
+			<div id="menu" style="border-radius:20px;">
+				<ul>
+					<li><a href="inicio.html">Início </a></li><span>/</span><li>
+					<li><a href="equipe.html">Equipe </a></li><span>/</span><li>
+					<li><a href="modalidades.html">Modalidades </a></li><span>/</span><li>
+					<li><a href="contatos.html">Contatos </a></li>
+				</ul>
+			</div><!--Fecha menu-->
+			
+			<div id="content">
+				
+				<div id="sidebar" style="border-radius:20px;">
+					<h3>Últimas Notícias</h3>
+					<ul>
+						<p style="margin:5px; text-align:justify;"> - Promoção de abertura da Ginasium Academia:</p>
+							<li style="margin: 0px 50px;">50,00 Musculação</li>
+							<li style="margin: 0px 50px;">60,00 Pilates</li>
+							<li style="margin: 0px 50px;">70,00 Dança</li>
+							<li style="margin: 0px 50px;">80,00 Luta</li>
+							<li style="margin: 0px 50px;">90,00 Hidroginástica</li>
+							<li style="margin: 0px 50px;">55,00 Balé</li>
+						<p style="margin:5px; text-align:justify;"> - Será realizado na próxima sexta-feira (01), o 2º Fatal Fighting MMA. O evento vai acontecer mais uma vez no Ginásio de Esportes O Rivaldão, e vai contar com estrutura profissional.</p>
+							<img style="width: 225px; height: 250px; margin:0px 5px; border-radius:15px;" src="img/mma.jpg">
+					</ul>
+				</div><!--sidebar-->
+				
+				<div id="conteudo" style="border-radius:20px;">
+							<h1 align="center">Luta</h1>
+							<p>A maior liberdade técnica concedida aos competidores de luta livre permitiu que a modalidade se tornasse o mais popular dos formatos de luta Olímpica desde a sua estreia em 1904.</p>
+							<p>Apesar da história mais antiga e ilustre da luta greco-romano, que remonta a tempos antigos, as modificações da luta livre significaram que muitas das mesmas restrições não se aplicam mais e os lutadores podem usar todas as partes do corpo para tentar tirar vantagem e subjugar um oponente.</p>
+							<p>Além das habilidades técnicas necessárias para dominar os diferentes tipos de combates e jogadas para conseguir fixar o oponente no chão, os lutadores também precisam de muita resistência para sustentar seus ataques, neste que é um dos mais intensos esportes da atualidade.</p>
+							<p>A luta pode terminar mais cedo se um lutador ganhar os dois primeiros rounds, entre três competidos no total, ou fixar os ombros de seu oponente no chão. No entanto, se isso não ocorrer, o competidor com o maior número de pontos no final do terceiro round é declarado o vencedor.</p>
+							<p>Antes do sistema de marcação de pontos ser introduzido, as competições de luta livre continuavam até que um lutador fosse finalmente forçado ao chão e isso significava que alguns rounds duravam horas antes que houvesse um vencedor. Em seu formato atual, cada round dura dois minutos, com um intervalo de 30 segundos entre cada um.</p>
+							<p>Na luta livre, são sete categorias de peso para os homens e quatro para as mulheres nos Jogos de Londres de 2012, sendo que as mulheres competiram pela primeira vez nos Jogos Olímpicos de Atenas em 2004.</p>
+							<p>As competições de luta livre são realizadas na base do mata-mata, com os dois vencedores semi-finalistas brigando pelo ouro. Os lutadores que tiverem perdido para um dos finalistas em alguma fase da competição têm a oportunidade de competir por uma das duas medalhas de bronze na fase de repescagem.</p>
+							<p>Tradicionalmente, a Rússia, o Japão e os EUA têm sido as nações mais dominantes na luta livre, embora o Irã e o Azerbaijão também tenham demonstrado sucesso no esporte.</p>	
+							<div  class = "flexslider">
+								<ul  class = "slides">
+			
+								   <li style="display:inline;"><a href="dança.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/Dança3.jpg" title="Dança"/></a></li>
+	
+								    <li style="display:inline;"><a href="balé.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/bale.jpg" title="Balé"/></a></li>
+			
+								    <li style="display:inline;"><a href="hidroginástica.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/hidroginastica.jpg" title="Hidroginástica"/></a></li>
+			
+								    <li style="display:inline;"><a href="luta.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/luta.jpg" title="Luta"/></a></li>
+			
+								    <li style="display:inline;"><a href="musculação.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/musculacao.jpg" title="Musculação"/></a></li>
+			
+								    <li style="display:inline;"><a href="pilates.html"><img style="width: 100px; height: 85px; border-radius: 15px;" src = "img/pilates.jpg" title="Pilates"/></a></li>
+							  	</ul>
+							</div>
+							<script type="text/javascript" charset="utf-8">
+		 
+								$('.flexslider').flexslider({
+									animation: "slide"
+								});
+						
+							</script>
+				</div><!--Fecha conteudo-->				
+			
+			</div><!--Fecha content-->	
+
+		
+		</div><!--fecha box-->
+	
+	</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Ginasium Academia</title>
+		<link href="estilo.css" rel="stylesheet" type="text/css" />
+		<style>
+			#mapa {
+				width: 400px;
+				height: 400px;
+				margin-top:5%;
+				margin-left:20%;
+			}
+		</style>
+		<script src="https://maps.google.com.br/maps/api/js?key=AIzaSyBV3egkgMkuDlny59D-wizkC8k_uvWya58&sensor=false"></script>
+	</head>
+
+	<body>
+		<script>
+			function validaLogin(){
+				var lgn = document.login;
+				if(lgn.login.value == ""){
+					alert("Digite um login!");
+					lgn.login.focus();
+					return false;
+				}
+				if(lgn.senha.value == ""){
+					alert("Digite uma senha!");
+					lgn.senha.focus();
+					return false;
+				}
+				return true;
+			}
+		</script>
+		<div id="box">
+
+			<div id="topo">
+				
+				<div id="topo_nome">
+					<p>Ginasium Academia</p>
+				</div><!--Fecha topo_nome-->
+				
+				<div id="topo_login">
+					<form name="login" onsubmit="return validaLogin()">
+						<label style="display:block; margin-bottom:5px;">Login: </label> 
+						<input style="border-radius:20px; width: 240px;" type="text" value="" name="login" autofocus/>
+						<label style="display:block;" id="senha">Senha: </label>
+						<input style="border-radius:20px; width: 240px;" type="password" value="" name="senha" />
+						<input type="submit" name="entrar" value="Entrar" id="entrar">
+						<a id="cadastrar" href="cadastrar.html"><font size="05">Cadastre-se</font></a>
+					</form>
+				</div><!--Fecha topo_login-->
+				
+			</div><!--Fecha topo-->
+
+			<div id="menu" style="border-radius:20px;">
+				<ul>
+					<li><a href="inicio.html">Início </a></li><span>/</span><li>
+					<li><a href="equipe.html">Equipe </a></li><span>/</span><li>
+					<li><a href="modalidades.html">Modalidades </a></li><span>/</span><li>
+					<li><a href="contatos.html">Contatos </a></li>
+				</ul>
+			</div><!--Fecha menu-->
+			
+			<div id="content">
+				
+				<div id="sidebar" style="border-radius:20px;">
+					<h3>Últimas Notícias</h3>
+					<ul>
+						<p style="margin:5px; text-align:justify;"> - Promoção de abertura da Ginasium Academia:</p>
+							<li style="margin: 0px 50px;">50,00 Musculação</li>
+							<li style="margin: 0px 50px;">60,00 Pilates</li>
+							<li style="margin: 0px 50px;">70,00 Dança</li>
+							<li style="margin: 0px 50px;">80,00 Luta</li>
+							<li style="margin: 0px 50px;">90,00 Hidroginástica</li>
+							<li style="margin: 0px 50px;">55,00 Balé</li>
+						<p style="margin:5px; text-align:justify;"> - Será realizado na próxima sexta-feira (01), o 2º Fatal Fighting MMA. O evento vai acontecer mais uma vez no Ginásio de Esportes O Rivaldão, e vai contar com estrutura profissional.</p>
+							<img style="width: 225px; height: 250px; margin:0px 5px; border-radius:15px;" src="img/mma.jpg">
+					</ul>
+				</div><!--sidebar-->
+				
+				<div id="conteudo" style="border-radius:20px;">
+					<p>A academia iniciou suas atividades em 1987 com dança, ginástica e masculação.</p>
+					<p>É a academia de musculação mais completa com os melhores equipamentos e os mais modernos no mercado, temos os melhores profissionais especializados na área.</p>
+					<p>Abaixo vai nossa localização, venha nos visitar!</p>
+					<div id="mapa"></div>
+					<script>
+						function initialize(){
+							var latlgn = new google.maps.LatLng(-7.035955,-37.275935);
+							var mapProp = {
+								center: latlgn,
+								zoom:5,
+								mapTypeId:google.maps.MapTypeId.ROADMAP
+							};
+							var map = new google.maps.Map(document.getElementById("mapa"),mapProp);
+							var marker = new google.maps.Marker({
+							  	position:latlgn,
+							});
+							marker.setMap(map);
+						}
+
+						google.maps.event.addDomListener(window, 'load', initialize)
+					</script>
+				</div><!--Fecha conteudo-->				
+			
+			</div><!--Fecha content-->	
+
+		
+		</div><!--fecha box-->
+	
+	</body>
+
+</html>
